@@ -1,0 +1,218 @@
+$text-size-050: 0.5em;
+$text-size-075: 0.75em;
+$text-size-1: 1em;
+$text-color-main: white;
+$text-color-header: brown;
+$text-color-page: #AED581;
+$text-color-page-title: #FF8A65;
+$nav-background-color: grey;
+$background-color: lightgrey;
+$background-color-main: #33691E;
+$photo-height: 100%;
+$photo-width: 100%;
+
+body {
+	background-color: $background-color;
+}
+
+.main_background {
+	background-color: $background-color-main;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 0 2% 0 2%;
+
+}
+
+.title_main {
+	img {
+	text-align: center;
+	width: 100%;
+	height: 50%;
+	}
+}
+
+.navbar {
+	background-color: $nav-background-color;
+	height: 50%;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	div {
+		display: inline-block;
+		color: $text-color-main;
+		margin: 2% 6% 2% 6%;
+		a {
+		  text-decoration: none;
+			color: $text-color-main;
+		}
+		a:hover {
+			background: $text-color-page;
+			color: black;
+		}
+	}
+}
+
+.photoflow {
+	display: inline-block;
+	position: relative;
+	background-image: url(/images/garden_wall_1.jpg);
+	background-size: auto;
+	height: 300px;
+	width: 100%;
+	opacity: 0.9;
+	.photo_tip {
+		position: absolute;
+		top: 81%;
+		width: 100%;
+		background-color: black;
+		opacity: 0.5;
+
+		h3 {
+			font-size: $text-size-075;
+			color: $text-color-page;
+		}
+		p {
+			font-size: $text-size-050;
+			color: $text-color-main;
+		}
+	}
+}
+
+.thumbnails {
+	display: table;
+}
+
+.thumbnails_col_1_image, .thumbnails_col_2_image, .thumbnails_col_3_image {
+	vertical-align: middle;
+	display: table-cell;
+	img {
+		width: 70%;
+		margin: 20%;
+	}
+}
+
+.thumbnails_col_1_text, .thumbnails_col_2_text, .thumbnails_col_3_text {
+	display: table-cell;
+	width: 15%;
+	h6 {
+		font-size: $text-size-1 * 1.1;
+		color: $text-color-page;
+	}
+	p {
+		color: $text-color-main;
+		padding-bottom: 10%;
+	}
+}
+
+
+.page_wall {
+	background-color: white;
+}
+
+.featured {
+	text-align: center;
+	padding-top: 1%;
+	h5 {
+		font-size: $text-size-1 * 1.2;
+		text-align: left;
+		color: $text-color-page-title;
+		background-color: lightgrey;
+		margin: 2% 2% 2% 2%;
+		padding: 1% 1% 1% 1%;
+	}
+	.featured_col_1, .featured_col_2, .featured_col_3, .featured_col_4 {
+	width: 20%;
+	float: left;
+	margin: 2%;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+
+		h6 {
+			color: $text-color-page-title;
+		}
+		h6, p {
+			text-align: left;
+		}
+	}
+}
+
+.featured_col_1 {
+	margin-left: 5%;
+}
+.featured_col_4 {
+	margin-right: 5%;
+}
+
+.tips_of_the_week {
+	display: inline-block;
+	width: 100%;
+	img {
+		width: 45%;
+		float: left;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+	.tips_of_the_week_text {
+		text-align: left;
+		width: 45%;
+		float: left;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+		h5 {
+		font-size: $text-size-1 * 1.2;
+		text-align: left;
+		color: $text-color-page-title;
+		background-color: lightgrey;
+		margin: 2% 2% 2% 2%;
+		padding: 1% 1% 1% 1%;
+		}
+
+	}
+}
+
+.page_bottom {
+	display: inline-block;
+	width: 100%;
+	background-color: $background-color;
+	margin-top: 3%;
+	.page_bottom_holder_1, .page_bottom_holder_2, .page_bottom_holder_3 {
+		width: 18%;
+		float: left;
+		margin: 2% 1% 2% 1%;
+		border: 1px;
+		border-right-style: solid;
+		border-right-color: gainsboro;
+		h6 {
+		    font-size: $text-size-1 * 1.1;
+			line-height: 1em;
+		}
+		p {
+			line-height: 1.4em;
+		}
+	}
+	.page_bottom_connect {
+		width: 18%;
+		float: left;
+		margin: 2% 1% 2% 1%;
+		h6 {
+		font-size: $text-size-1 * 1.1;
+		}
+
+		li {
+			list-style-type: armenian;
+		}
+	}
+	.page_bottom_holder_1 {
+		margin-left: 5%;
+	}
+}
+
+footer {
+	text-align: center;
+	margin: 1% 0 1% 0;
+	color: $text-color-main;
+}
